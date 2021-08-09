@@ -15,6 +15,21 @@ grpc_tools_node_protoc --js_out=import_style=commonjs,binary:. --grpc_out=grpc_j
 - https://developers.google.com/web/fundamentals/performance/http2
 - https://http2.github.io/
 
+## Structure
+
+Protobuf structure:
+
+```
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloReply {
+  string message = 1;
+  int32 age = 2;
+}
+```
+
 ### Start the server
 
 ```
