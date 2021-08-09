@@ -169,5 +169,6 @@ Requests/sec:	4606.05
 - https://imagekit.io/demo/http2-vs-http1
 - https://grpc.io/docs/languages/node/quickstart/
 - https://ghz.sh/docs/usage
+- https://en.wikipedia.org/wiki/SPDY
 
 © Copyright Max Base, 2021
