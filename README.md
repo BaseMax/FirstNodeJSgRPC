@@ -9,27 +9,6 @@ sudo npm install -g grpc-tools
 grpc_tools_node_protoc --js_out=import_style=commonjs,binary:. --grpc_out=grpc_js:. helloworld.proto
 ```
 
-**Read more:**
-- https://grpc.io/docs/languages/node/
-- https://developers.google.com/protocol-buffers
-- https://developers.google.com/web/fundamentals/performance/http2
-- https://http2.github.io/
-
-## Structure
-
-Protobuf structure:
-
-```
-message HelloRequest {
-  string name = 1;
-}
-
-message HelloReply {
-  string message = 1;
-  int32 age = 2;
-}
-```
-
 ### Start the server
 
 ```
@@ -45,6 +24,21 @@ node client.js
 #### Test with playground software (BloomRPC)
 
 ![BloomRPC - first nodejs grpc](preview.png)
+
+## Structure
+
+Protobuf structure:
+
+```
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloReply {
+  string message = 1;
+  int32 age = 2;
+}
+```
 
 ### Benchmark Performance
 
@@ -97,5 +91,12 @@ Requests/sec:	3062.49
 Average:	8.63 ms
 Requests/sec:	5562.82
 ```
+
+
+**Read more:**
+- https://grpc.io/docs/languages/node/
+- https://developers.google.com/protocol-buffers
+- https://developers.google.com/web/fundamentals/performance/http2
+- https://http2.github.io/
 
 © Copyright Max Base, 2021
