@@ -4,9 +4,9 @@ A example repository to show how you can create your first gRPC webservice (+ Pr
 
 ## What you already need to know before this repository
 
-- **HTTP/2:** 
-- **Protobuf:** 
-- **gRPC:** 
+- **HTTP/2:** HTTP/2 (or h2) is a binary protocol that brings push, multiplexing streams and frame control to the web.
+- **Protobuf:** Protocol Buffers (a.k.a., protobuf) are Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data. Protobuf is an Interface Definition Language that is language-neutral and platform-neutral. ... With protobuf, you define your message format in a `.proto` file. You can then use the protobuf compilers to generate the client and service side code to encode and parse the data.
+- **gRPC:** `gRPC` is a modern open source high performance Remote Procedure Call (RPC) framework that can run in any environment. It can efficiently connect services in and ...
 
 ## Getting started
 
