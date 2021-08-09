@@ -130,6 +130,8 @@ Average:	10.59 ms
 Requests/sec:	4606.05
 ```
 
+**Note:** These tests were not performed under specific and appropriate conditions. It is better to try it yourself.
+
 ### Hardware
 
 - **CPU:** Intel Core i5-9400F @ 6x 4.1GHz [52.0°C]
