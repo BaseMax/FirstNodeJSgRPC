@@ -2,6 +2,12 @@
 
 A example repository to show how you can create your first gRPC webservice (+ Protobuf in HTTP2 protocol) with NodeJS.
 
+## What you already need to know before this repository
+
+- **HTTP/2:** 
+- **Protobuf:** 
+- **gRPC:** 
+
 ## Getting started
 
 ```
