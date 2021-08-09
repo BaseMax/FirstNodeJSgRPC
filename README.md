@@ -92,6 +92,11 @@ Average:	8.63 ms
 Requests/sec:	5562.82
 ```
 
+### Hardware
+
+- **CPU:** Intel Core i5-9400F @ 6x 4.1GHz [52.0°C]
+- **Node:** v13.14.0
+- **NPM:** 6.14.4
 
 **Read more:**
 - https://grpc.io/docs/languages/node/
