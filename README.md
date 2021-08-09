@@ -25,7 +25,7 @@ Take a fast look at the output of each structure and its bytes size:
 }
 ```
 
-**Protobuf* (2 Bytes):
+**Protobuf** (2 Bytes):
 
 ```
 0x08 0x2a
