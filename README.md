@@ -72,13 +72,13 @@ message HelloReply {
 
 ```
 server {
-      listen 94 http2;
-      location / {
-          # Replace localhost:50051 with the address and port of your gRPC server
-          # The 'grpc://' prefix is optional; unencrypted gRPC is the default
-          grpc_pass grpc://localhost:50051;
-      }
+  listen 94 http2;
+  location / {
+    # Replace localhost:50051 with the address and port of your gRPC server
+    # The 'grpc://' prefix is optional; unencrypted gRPC is the default
+    grpc_pass grpc://localhost:50051;
   }
+}
 ```
 
 And restart nginx:
