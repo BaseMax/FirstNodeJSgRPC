@@ -39,7 +39,27 @@ message HelloReply {
   int32 age = 2;
 }
 ```
+### Connect gRPC to Nginx
 
+```
+server {
+      listen 94 http2;
+      location / {
+          # Replace localhost:50051 with the address and port of your gRPC server
+          # The 'grpc://' prefix is optional; unencrypted gRPC is the default
+          grpc_pass grpc://localhost:50051;
+      }
+  }
+```
+
+And restart nginx:
+
+```
+sudo systemctl restart nginx
+```
+
+Read more: https://www.nginx.com/blog/nginx-1-13-10-grpc/
+    
 ### Benchmark Performance
 
 Using https://ghz.sh/:
@@ -90,6 +110,18 @@ Requests/sec:	3062.49
 ```
 Average:	8.63 ms
 Requests/sec:	5562.82
+```
+
+**Minimum with Nginx:**
+```
+Average:	26.05 ms
+Requests/sec:	1870.37
+```
+
+**Maximum with Nginx:**
+```
+Average:	10.59 ms
+Requests/sec:	4606.05
 ```
 
 ### Hardware
