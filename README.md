@@ -29,7 +29,7 @@ node client.js
 
 #### Test with playground software (BloomRPC)
 
-![BloomRPC - first nodejs grpc](preview.png)
+[![BloomRPC - first nodejs grpc](preview.png)](helloworld.proto)
 
 ## Structure
 
