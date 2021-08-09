@@ -1,11 +1,19 @@
 # First NodeJS `gRPC`
 
+A example repository to show how you can create your first gRPC webservice (+ Protobuf in HTTP2 protocol) with NodeJS.
+
 ## Getting started
 
 ```
 sudo npm install -g grpc-tools
 grpc_tools_node_protoc --js_out=import_style=commonjs,binary:. --grpc_out=grpc_js:. helloworld.proto
 ```
+
+**Read more:**
+- https://grpc.io/docs/languages/node/
+- https://developers.google.com/protocol-buffers
+- https://developers.google.com/web/fundamentals/performance/http2
+- https://http2.github.io/
 
 ### Start the server
 
@@ -25,6 +33,7 @@ node client.js
 
 ### Benchmark Performance
 
+Using https://ghz.sh/:
 ```
 $ ghz --insecure --proto ./helloworld.proto --call helloworld.Greeter.SayHello -d '{"name":"Max"}' 0.0.0.0:50051
 
@@ -65,7 +74,7 @@ Status code distribution:
 **Minimum:**
 ```
 Average:	16.03 ms
-Requests/sec:	3062.49```
+Requests/sec:	3062.49
 ```
 
 **Maximum:**
@@ -73,3 +82,5 @@ Requests/sec:	3062.49```
 Average:	8.63 ms
 Requests/sec:	5562.82
 ```
+
+© Copyright Max Base, 2021
