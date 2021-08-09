@@ -1,0 +1,29 @@
+// nodejs
+// sudo npm install -g grpc-tools
+// grpc_tools_node_protoc --js_out=import_style=commonjs,binary:. --grpc_out=grpc_js:. helloworld.proto
+
+// c++
+// protoc -I . --grpc_out=. --plugin=protoc-gen-grpc=grpc_cpp_plugin helloworld.proto
+// protoc -I . --cpp_out=. helloworld.proto
+
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.examples.helloworld";
+option java_outer_classname = "HelloWorldProto";
+option objc_class_prefix = "HLW";
+
+package helloworld;
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloReply {
+  string message = 1;
+  int32 age = 2;
+}
+
+service Greeter {
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+}
