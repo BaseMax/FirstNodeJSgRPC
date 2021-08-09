@@ -14,6 +14,23 @@ A example repository to show how you can create your first gRPC webservice (+ Pr
 - **Protobuf** (and not JSON)
 - **gRPC** (and not REST)
 
+## Why Protobuf is much optimized and faster?
+
+Take a fast look at the output of each structure and its bytes size:
+
+**JSON** (9 Bytes):
+```
+{
+  "id":42
+}
+```
+
+**Protobuf* (2 Bytes):
+
+```
+0x08 0x2a
+```
+
 ## Getting started
 
 ```
