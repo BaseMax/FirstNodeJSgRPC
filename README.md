@@ -98,5 +98,8 @@ Requests/sec:	5562.82
 - https://developers.google.com/protocol-buffers
 - https://developers.google.com/web/fundamentals/performance/http2
 - https://http2.github.io/
+- https://imagekit.io/demo/http2-vs-http1
+- https://grpc.io/docs/languages/node/quickstart/
+- https://ghz.sh/docs/usage
 
 © Copyright Max Base, 2021
